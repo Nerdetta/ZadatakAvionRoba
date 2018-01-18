@@ -11,7 +11,6 @@ public class Zadatak1KreiranjeTabela {
     public static void main(String[] args){
         ConnectionSource connectionSource = null;
         try {
-            /*Uspostavimo konekciju sa bazom preko koje mozemo da posaljemo naredbe bazi  */
             connectionSource = new JdbcConnectionSource(Konstante.DATABASE_URL);
 
             TableUtils.dropTable(connectionSource,Roba.class,true);
